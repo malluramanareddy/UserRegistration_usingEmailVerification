@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            margin-right: 35%; /* Changed to 25% */
+        }
+        .header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .header li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .header a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .header a:hover {
+            color: #007bff; /* Add hover color */
+        }
+        .content {
+            margin-top: 100px; /* Adjust based on header height */
+        }
+        .content img {
+            display: block;
+            margin: 0 auto;
+        }
+        .content h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="#">Menu_1</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="">Menu_3</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to Homepage!</h1>
+        <img src="/images/Tracxn-logo.jpg" width="500" height="500">
+    </div>
+</body>
+</html>

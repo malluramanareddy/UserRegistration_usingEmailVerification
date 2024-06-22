@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .profile h1 {
+            margin: 0;
+        }
+        .details {
+            text-align: left;
+        }
+        .details h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .details p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Your Profile</h1>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture">
+            <h1>Hi, <span th:text="${user.fullName}">Raju</span>!</h1>
+        </div>
+        <div class="details">
+            <h2>Personal Information</h2>
+            <p><strong>Full Name:</strong> <span th:text="${user.fullName}"></span></p>
+            <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+           
+        </div>
+    </div>
+</body>
+</html>
